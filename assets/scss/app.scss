@@ -332,3 +332,26 @@ body#blog_search .post-metadata {
   font-size: 16px;
   margin-bottom: 8px;
 }
+
+/* Custom:
+   ---------------------------------------------------------------------------- */
+article h2 {
+  display: inline-block;
+  line-height: 43px;
+  margin-left: 22px;
+  vertical-align: top;
+  max-width: 79%;
+  height: 86px;
+}
+#main h1 {
+  display: inline-block;
+  line-height: 43px;
+  margin-left: 22px;
+  vertical-align: top;
+  max-width: 79%;
+  height: 86px;
+}
+
+body#blog_index #main h1, body#blog_index #main p {
+  display: inline-block;
+}
