@@ -58,7 +58,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "App\\Tests\\": "tests/",
+            "Msalsas\\VotingBundle\\": "lib/MsalsasVotingBundle/src/"
         }
     },
     "scripts": {
