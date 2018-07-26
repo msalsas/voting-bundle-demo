@@ -3,6 +3,11 @@
 {% block body_id 'blog_post_show' %}
 
 {% block main %}
+    {% import "@msalsas_voting/msalsas_voting_widget.html.twig" as msalsas_voting_widget %}
+    {{ msalsas_voting_widget.shakeItCSS() }}
+    {{ msalsas_voting_widget.shakeItJS() }}
+    {{ msalsas_voting_widget.shakeItModal() }}
+    {{ msalsas_voting_widget.shakeIt(post.id) }}
     <h1>{{ post.title }}</h1>
 
     <p class="post-metadata">

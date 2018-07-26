@@ -3,8 +3,14 @@
 {% block body_id 'blog_index' %}
 
 {% block main %}
+    {% import "@msalsas_voting/msalsas_voting_widget.html.twig" as msalsas_voting_widget %}
+    {{ msalsas_voting_widget.shakeItCSS() }}
+    {{ msalsas_voting_widget.shakeItJS() }}
+    {{ msalsas_voting_widget.shakeItModal() }}
+
     {% for post in posts %}
         <article class="post">
+            {{ msalsas_voting_widget.shakeIt(post.id) }}
             <h2>
                 <a href="{{ path('blog_post', {slug: post.slug}) }}">
                     {{ post.title }}
@@ -19,6 +25,7 @@
             {{ post.summary|md2html }}
 
             {{ include('blog/_post_tags.html.twig') }}
+            {{ msalsas_voting_widget.bottomBar(post.id) }}
         </article>
     {% else %}
         <div class="well">{{ 'post.no_posts_found'|trans }}</div>
