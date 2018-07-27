@@ -5,6 +5,9 @@
     "composer/semver": {
         "version": "1.4.2"
     },
+    "composer/xdebug-handler": {
+        "version": "1.1.0"
+    },
     "dama/doctrine-test-bundle": {
         "version": "v4.0.1"
     },
@@ -97,6 +100,15 @@
     },
     "monolog/monolog": {
         "version": "1.23.0"
+    },
+    "msalsas/voting-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "c347ea89d380c403deadd722ca78008c30408dc6"
+        }
     },
     "ocramius/package-versions": {
         "version": "1.1.3"
@@ -262,6 +274,9 @@
             "version": "3.3",
             "ref": "0a66a0097def4db1cd03bcb3d4a268440ae4cb47"
         }
+    },
+    "symfony/polyfill-ctype": {
+        "version": "v1.8.0"
     },
     "symfony/polyfill-intl-icu": {
         "version": "v1.6.0"
