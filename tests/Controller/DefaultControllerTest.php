@@ -28,42 +28,6 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultControllerTest extends WebTestCase
 {
     /**
-     * PHPUnit's data providers allow to execute the same tests repeated times
-     * using a different set of data each time.
-     * See https://symfony.com/doc/current/cookbook/form/unit_testing.html#testing-against-different-sets-of-data.
-     *
-     * @dataProvider getPublicUrls
-     */
-    public function testPublicUrls(string $url)
-    {
-        $client = static::createClient();
-        $client->request('GET', $url);
-
-        $this->assertSame(
-            Response::HTTP_OK,
-            $client->getResponse()->getStatusCode(),
-            sprintf('The %s public URL loads correctly.', $url)
-        );
-    }
-
-    /**
-     * A good practice for tests is to not use the service container, to make
-     * them more robust. However, in this example we must access to the container
-     * to get the entity manager and make a database query. The reason is that
-     * blog post fixtures are randomly generated and there's no guarantee that
-     * a given blog post slug will be available.
-     */
-    public function testPublicBlogPost()
-    {
-        $client = static::createClient();
-        // the service container is always available via the test client
-        $blogPost = $client->getContainer()->get('doctrine')->getRepository(Post::class)->find(1);
-        $client->request('GET', sprintf('/en/blog/posts/%s', $blogPost->getSlug()));
-
-        $this->assertSame(Response::HTTP_OK, $client->getResponse()->getStatusCode());
-    }
-
-    /**
      * The application contains a lot of secure URLs which shouldn't be
      * publicly accessible. This tests ensures that whenever a user tries to
      * access one of those pages, a redirection to the login form is performed.

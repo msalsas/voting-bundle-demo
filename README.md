@@ -1,8 +1,9 @@
-Symfony Demo Application
-========================
+Symfony Demo Application for MsalsasVotingBundle
+================================================
 
-The "Symfony Demo Application" is a reference application created to show how
-to develop Symfony applications following the recommended best practices.
+This is a demo for [MsalsasVotingBundle](https://github.com/msalsas/voting-bundle).
+ 
+Cloned from [Symfony Demo Application](https://github.com/symfony/demo).
 
 Requirements
 ------------
@@ -17,7 +18,9 @@ Installation
 Execute this command to install the project:
 
 ```bash
-$ composer create-project symfony/symfony-demo
+$ git clone https://github.com/msalsas/voting-bundle-demo.git
+$ cd voting-bundle-demo/
+$ composr install
 ```
 
 Usage
@@ -28,22 +31,13 @@ command to run the built-in web server and access the application in your
 browser at <http://localhost:8000>:
 
 ```bash
-$ cd symfony-demo/
+$ cd voting-bundle-demo/
 $ php bin/console server:run
 ```
 
 Alternatively, you can [configure a fully-featured web server][2] like Nginx
 or Apache to run the application.
 
-Tests
------
-
-Execute this command to run tests:
-
-```bash
-$ cd symfony-demo/
-$ ./vendor/bin/simple-phpunit
-```
 
 [1]: https://symfony.com/doc/current/reference/requirements.html
 [2]: https://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
