@@ -1,7 +1,7 @@
 Symfony Demo Application for MsalsasVotingBundle
 ================================================
 
-This is a demo for [MsalsasVotingBundle](https://github.com/msalsas/voting-bundle).
+This is a demo for [MsalsasVotingBundle](https://github.com/msalsas/MsalsasVotingBundle).
  
 Cloned from [Symfony Demo Application](https://github.com/symfony/demo).
 
