@@ -4,7 +4,7 @@
     "type": "project",
     "description": "Demo for MsalsasVotingBundle",
     "require": {
-        "php": "^7.1.3",
+        "php": "^7.2.9",
         "ext-pdo_sqlite": "*",
         "doctrine/doctrine-bundle": "^1.6.10",
         "doctrine/doctrine-migrations-bundle": "^1.3",
