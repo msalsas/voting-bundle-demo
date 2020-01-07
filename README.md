@@ -8,7 +8,7 @@ Cloned from [Symfony Demo Application](https://github.com/symfony/demo).
 Requirements
 ------------
 
-  * PHP 7.1.3 or higher;
+  * PHP 7.2 or higher;
   * PDO-SQLite PHP extension enabled;
   * and the [usual Symfony application requirements][1].
 
@@ -20,7 +20,7 @@ Execute this command to install the project:
 ```bash
 $ git clone https://github.com/msalsas/voting-bundle-demo.git
 $ cd voting-bundle-demo/
-$ composr install
+$ composer install
 ```
 
 Usage
